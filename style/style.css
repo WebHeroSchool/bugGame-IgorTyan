@@ -1,6 +1,5 @@
 .container {
-	background: url(../img/Background.png) no-repeat;
-	background-size: cover;
+	background: url(../img/Background.png);
 	max-width: 1920px;
 	min-width: 320px;
 	height: 100vh;
@@ -18,7 +17,7 @@
 	height: 100%;
 }
 
-.container .main .none {
+.main .none {
 	display: none;
 }
 
@@ -67,7 +66,6 @@
 	height: 23px;
 	left: -46px;
 	top: 20px;
-	/*top: calc(50% - 9px);*/
 }
 
 .low-level,
@@ -94,10 +92,11 @@
 
 .wrap {
 	position: absolute;
-	top: 55%;
-	right: 9%;
-	width: 400px;
-	height: 350px;
+	top: 49%;
+	left: 55%;
+	max-width: 400px;
+	width: 100%;
+	max-height: 350px;
 }
 
 .card-background {
@@ -182,4 +181,124 @@
 	transform: rotateY(180deg);
 } 
 
+
 /* адаптив для смартфонов */
+
+@media (max-width: 1270px)  {
+	
+	.cards_hard {
+		grid-template-columns: repeat(3, 1fr);
+		height: 100vh;
+	}
+	
+	.wrap {
+	top: 46%;
+	left: 53%;
+	max-width: 345px;
+}
+
+}
+
+
+@media (max-width: 1025px) {
+	
+	.title {
+		font-size: 45px;
+	}
+
+	.subtitle {
+		font-size: 16px;
+		margin-bottom: 45px;
+	}
+
+	.levels {
+		margin-left: 100px;
+	}
+
+	.level {
+		font-size: 45px;
+		margin-bottom: 23px;
+	}
+	
+	.wrap {
+		top: 39%;
+		left: 52%;
+		max-width: 329px;
+	}
+
+	.card-background {
+		width: 191px;
+		height: 297px;
+	}
+
+	.start {
+		margin-top: 70px;
+		width: 330px;
+    height: 85px;
+    border-radius: 8px;
+    font-size: 34px;
+	}
+
+}
+
+
+@media (max-width: 870px) {
+	
+	.main {
+    margin: 65px auto;
+}
+
+	.wrap {
+		display: none;
+	}
+
+	.card {
+		width: 200px;
+		height: 310px;
+	}
+
+}
+
+
+@media (max-width: 540px) {
+	
+	.title {
+		line-height: 50px;
+	}
+
+	.title,
+	.level {
+		font-size: 38px;
+	}
+
+	.subtitle {
+		font-size: 16px;
+		margin-bottom: 34px;
+		line-height: 25px;
+	}
+
+	.levels {
+		margin-left: 0;
+		margin-left: 65px;
+		align-items: center;
+	}
+
+	.level {
+		margin-bottom: 20px;
+	}
+
+	.start {
+		width: 100%;
+		font-size: 38px;
+	}
+
+	.content {
+		align-items: flex-start;
+	}
+
+	.cards_hard,
+	.game-map {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+}
