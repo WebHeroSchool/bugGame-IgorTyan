@@ -315,3 +315,48 @@
 	}
 
 }
+
+
+@media (max-width: 370px) {
+	
+	.content {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.title {
+		line-height: 42px;
+	}
+
+	.subtitle {
+		margin-bottom: 26px;
+		line-height: 22px;
+	}
+
+	.levels {
+		margin-left: 35px;
+	}
+
+	.level {
+		font-size: 35px;
+		margin-bottom: 14px;
+	}
+
+	.start {
+		width: 75%;
+		font-size: 30px;
+		margin-top: 25px;
+		height: 70px;
+	}
+
+	.game-map {
+		grid-gap: 10px;
+	}
+
+	.card {
+		width: 93px;
+		height: 145px;
+	}
+
+}
